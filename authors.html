@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teams</title>
+	<link rel="stylesheet" type="text/css" href="secondassay.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+.para{
+	display: none;
+}
+
+@media screen and (max-width: 1300px) {
+	.txtx h4{
+		display: none;
+		padding-right: 2px;
+	}
+	.para
+	{
+		display: inline;
+		font-size: 21px;
+		font-weight: bold;
+		color: #101084;
+		margin-top: 20px;
+		border: 1px solid #101084;
+		padding: 5px;
+	}
+}
+input{
+	display: flex;
+}
+	.one h2{
+		padding: 40px;
+	}
+	.one .search-container{
+		padding-left: 372px;
+	}
+	.foott i{
+		margin-left: 25px;
+		background: gray;
+		color: #fff;
+		width: 25px;
+		height: 25px;
+		border-radius: 40%;
+		text-align: center;
+		padding-top: 5px;
+		margin-top: 2px;
+
+	}
+	.authors1{
+		background-color: #EFEEEC;
+		padding: 8px;
+		border: 1px solid #c6c6c6;
+		display: inline-block;
+		margin-top: 1%;
+	}
+	
+	.info{
+		display: flex;
+	}
+	.details {
+		padding: 15px;
+	}
+	.details h4{
+		padding-top: 8px;
+		color: gray;
+	}
+	.txtx h4{
+		padding-top: 15px;
+		padding-right: 60px;
+		color: #3c89d0;
+		font-size: 23px;
+	}
+	.social {
+		text-align: center;
+		font-size: 20px;
+	}
+	.social i{
+		padding-left: 25px;
+		padding-top: 12px;
+		color: gray;
+
+	}
+	.foott{
+		padding-top: 25px;
+		padding-bottom: 20px;
+		background: #101084;
+		padding-right: 25px;
+		padding-left: 25px;
+		
+		display: flex;
+		font-weight: normal;
+		font-size: 15px;
+		margin-top: 3%;
+	}
+	.foott ul li{
+		display: inline-block;
+		margin-right: 80px;
+		padding-top: 4px;
+	}
+	.foott h4{
+		margin-right: 100px;
+		color: white;
+	}
+	.foott h5{
+		padding-top: 30px;
+		color: white;
+		font-size: 15px;
+		padding-right: 98px;
+	}
+	.titlle {
+		color: black;
+		font-size: 34px;
+		padding-top: 6px;
+  text-shadow: 2px 2px 5px blue;
+	}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		
+		 <div class="navbar">
+		 
+		 <nav id="nav1">
+			<ul id="MenuItems">
+				<li><a href="">الرئيسية</a></li>
+				<li><a href="">سياسة الخصوصية</a></li>
+				<li><a href="">القوانين والأحكام</a></li>
+				<li><a href="">عن الموقع</a></li>
+				<li><a href="">فريق التحرير</a></li>
+				<li><a href="">من نحن</a></li>
+				<li><a href="">اتصل بنا</a></li>
+			</ul>
+			<img src="./img/menu.png" class="menu-icon" onclick="menutoggle()">
+		 </nav>
+		 <div class="log">
+		 	<div class="social">
+    	 		<i class="fa fa-facebook"></i>
+    	 		<i class="fa fa-whatsapp"></i>
+    	 		<i class="fa fa-twitter"></i>
+    	 		<i class="fa fa-instagram"></i>
+    	 	</div>
+		 </div>
+	    </div>
+	   
+	   <!-- new row for logo and ad-->
+	   <div class="row r1">
+	   	 <div class="ad1">
+	   	 	<img src="./img/logo.png" style="  float: right; padding-right: 100px;">
+	   	 </div>
+	   	 <div class="logo">
+	   	 	  	 	<img src="./img/ADS1.png" style="width: 70%;float: left; height: 70px;">
+	   	 </div>
+	   </div>
+	   <!-- another nav-->
+	   <div class="row r2">
+      <div class="footer-nav1" id="nav2">
+       
+      <ul id="iCons">
+        <li><a href="">الرئيسية</a></li>
+        <li><a href="">التحليل الاقتصادي</a></li>
+        <li><a href="">البحث العلمي</a></li>
+        <li><a href="">الصحة</a></li>
+        <li><a href="">تنمية الذات</a></li>
+        <li><a href="">المرأة والطفل</a></li>
+        <li><a href="">ثقافة دينية</a></li>
+        <li><a href="">علوم وفنون</a></li>
+        <li><a href="">أخبار المجتمع</a></li>
+        <li><a href="">عجائب وغراب</a></li>
+        <li><a href="">السفر والسياحة</a></li>
+      </ul>
+     </div>
+     <img src="./img/menu.png" class="menuicon" onclick="menuclick()">
+     </div>
+     
+    </div>
+
+    <!-- section one -->
+<section class="container">
+	<div class="row one">
+	<h2 class="titlle">فريق التحرير..</h2>
+	     <div style="display: flex; ">
+	  	<i class="fa fa-search" ></i>
+	  	<input type="text" placeholder="أدخل الاسم" name="search">
+	  	</div>
+	</div>
+</section>
+    
+<section>
+    <!-- second section -->
+    <div class="row">
+    	<div class=" authors1">
+    	 <div  class="info">
+    	 	<img src="./img/avatar.png">
+    	 	<div class="details ">
+    	 	<h2>فهد الأنصاري</h2>
+    	 	
+    	 	<h4>السعودية</h4>
+    	 	<h4>الهاتف: +966594781247</h4><br>
+
+    	 	<p class="para">مشرف</p>
+
+    	 	</div>
+         <div class="txtx">
+    	 	<h4>مشرف</h4>
+    	 	</div>
+          </div>
+    	 	<div class="social">
+    	 		<i class="fa fa-facebook"></i>
+    	 		<i class="fa fa-whatsapp"></i>
+    	 		<i class="fa fa-twitter"></i>
+    	 		<i class="fa fa-instagram"></i>
+    	 	</div>
+    	 </div>
+
+
+    	 <!--second authors-->
+    	 <div class=" authors1">
+    	 <div  class="info">
+    	 	<img src="./img/abdallah.png">
+    	 	<div class="details">
+    	 	<h2>فهد الأنصاري</h2>
+    	 	
+    	 	<h4>السعودية</h4>
+    	 	<h4>الهاتف: +966594781247</h4><br>
+    	 	<p class="para">مشرف</p>
+    	 	</div>
+    	 	<div class="txtx">
+    	 	<h4>مسؤول</h4>
+    	 	</div>
+          </div>
+    	 	<div class="social">
+    	 		<i class="fa fa-facebook"></i>
+    	 		<i class="fa fa-whatsapp"></i>
+    	 		<i class="fa fa-twitter"></i>
+    	 		<i class="fa fa-instagram"></i>
+    	 	</div>
+    	 </div>
+
+    	 <!-- third authors-->
+    	 <div class=" authors1">
+    	 <div  class="info">
+    	 	<img src="./img/ahmedSalem.png">
+    	 	<div class="details">
+    	 	<h2>فهد الأنصاري</h2>
+    	 	
+    	 	<h4>السعودية</h4>
+    	 	<h4>الهاتف: +966594781247</h4><br>
+    	 	<p class="para">مشرف</p>
+    	 	</div>
+    	 	<div class="txtx">
+    	 	<h4>مدير</h4>
+    	 	</div>
+          </div>
+    	 	<div class="social">
+    	 		<i class="fa fa-facebook"></i>
+    	 		<i class="fa fa-whatsapp"></i>
+    	 		<i class="fa fa-twitter"></i>
+    	 		<i class="fa fa-instagram"></i>
+    	 	</div>
+    	 </div>
+    </div>
+
+    <!--second row-->
+    <div class="row">
+    	<div class=" authors1">
+    	 <div  class="info">
+    	 	<img src="./img/darwish.png">
+    	 	<div class="details">
+    	 	<h2>فهد الأنصاري</h2>
+    	 	
+    	 	<h4>السعودية</h4>
+    	 	<h4>الهاتف: +966594781247</h4><br>
+    	 	<p class="para">مشرف</p>
+    	 	</div>
+    	 	<div class="txtx">
+    	 	<h4>مشرف</h4>
+    	 	</div>
+          </div>
+    	 	<div class="social">
+    	 		<i class="fa fa-facebook"></i>
+    	 		<i class="fa fa-whatsapp"></i>
+    	 		<i class="fa fa-twitter"></i>
+    	 		<i class="fa fa-instagram"></i>
+    	 	</div>
+    	 </div>
+
+
+
+    	 <!--second authors-->
+    	 <div class=" authors1">
+    	 <div  class="info">
+    	 	<img src="./img/ahmedsh.png">
+    	 	<div class="details">
+    	 	<h2>فهد الأنصاري</h2>
+    	 	
+    	 	<h4>السعودية</h4>
+    	 	<h4>الهاتف: +966594781247</h4><br>
+
+<p class="para">مشرف</p>    	 	</div>
+    	 	<div class="txtx">
+    	 	<h4>مسؤول</h4>
+    	 	</div>
+          </div>
+    	 	<div class="social">
+    	 		<i class="fa fa-facebook"></i>
+    	 		<i class="fa fa-whatsapp"></i>
+    	 		<i class="fa fa-twitter"></i>
+    	 		<i class="fa fa-instagram"></i>
+    	 	</div>
+    	 </div>
+
+    	 <!-- third authors-->
+    	 <div class=" authors1">
+    	 <div  class="info">
+    	 	<img src="./img/mosaed.png">
+    	 	<div class="details">
+    	 	<h2>فهد الأنصاري</h2>
+    	 	
+    	 	<h4>السعودية</h4>
+    	 	<h4>الهاتف: +966594781247</h4><br>
+    	 	<p class="para">مشرف</p>
+    	 	</div>
+    	 	<div class="txtx">
+    	 	<h4>مدير</h4>
+    	 	</div>
+          </div>
+    	 	<div class="social">
+    	 		<i class="fa fa-facebook"></i>
+    	 		<i class="fa fa-whatsapp"></i>
+    	 		<i class="fa fa-twitter"></i>
+    	 		<i class="fa fa-instagram"></i>
+    	 	</div>
+    	 </div>
+    </div>
+
+</section>
+
+<!-- page button side-->
+<div class="page-btn">
+    <span>&#8594;</span>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8592;</span>
+</div>
+<div class="foott">
+
+	<div>
+		<h4>المقالات والتعليقات  لا تعبر عن رأي الموقع بل تعبر عن رأي الكاتب نفسه  وللإبلاغ عن مقال  أو تعليق مخالف أرسل بلاغ</h4>
+			<h5 >جميع الحقوق محفوظة لدى @2021</h5>
+	</div>
+	<div>
+		<ul>
+				<li><a href="">الرئيسية</a></li>
+				<li><a href="">سياسة الخصوصية</a></li>
+				<li><a href="">القوانين والأحكام</a></li>
+				<li><a href="">عن الموقع</a></li>
+			</ul>
+			<div class="ic" style="display: inline-block;margin-top: 5%; text-align: center; float: left;">
+    	 		<i class="fa fa-facebook"></i>
+    	 		<i class="fa fa-whatsapp"></i>
+    	 		<i class="fa fa-twitter"></i>
+    	 		<i class="fa fa-instagram"></i>
+    	 	</div>
+	</div>	
+</div>
+
+<!-- Js -->
+<script>
+ 	
+
+ 	var MenuItems = document.getElementById("MenuItems");
+
+ 	MenuItems.style.maxHeight= "0px";
+
+ 	function menutoggle() {
+ 		if (MenuItems.style.maxHeight == "0px") 
+ 		{
+ 			MenuItems.style.maxHeight= "200px";
+ 		}
+ 		else
+ 		{
+ 			MenuItems.style.maxHeight= "0px";
+ 		}
+ 	}
+
+ </script>
+ <script>
+ 	
+ 	var iCons=document.getElementById("iCons");
+
+ 	iCons.style.maxHeight= "0px";
+
+ 	function menuclick() {
+ 		if (iCons.style.maxHeight == "0px") 
+ 		{
+ 			iCons.style.maxHeight= "200px";
+ 		}
+ 		else
+ 		{
+ 			iCons.style.maxHeight= "0px";
+ 		}
+ 	}
+ </script>
+ 
+
+</body>
+</html>
